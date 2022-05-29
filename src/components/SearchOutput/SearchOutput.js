@@ -8,20 +8,23 @@ const SearchOutput = (props) => {
 
     console.log("A");
     console.log(props);
-    if (props.term && props.MRData.ConstructorTable.Constructors.length !== 0) {
-        message = <p>Showing {props.MRData.ConstructorTable.Constructors.length} results</p>;
-    } else if (props.term) {
-        message = <Spinner/>;
-    } else if (props.term === null){
-        message = "no results found";
+    try {
+        if (props.term && props.results[0].ConstructorTable.Constructors.length > 0) {
+                message = <p>In {props.term} there were {props.results[0].ConstructorTable.Constructors.length} teams</p>;
+            } else if (props.term) {
+                message = <Spinner/>;
+            } else if (props.term === null){
+                message = "no results found";
+            }
     }
+    catch (e) {}
 
     let searchResults = null;
     console.log("B");
     console.log(props);
-    if (props.MRData) {
+    if (props.results.length > 0) {
         searchResults =
-            props.results.map((c, index) => {
+            props.results[0].ConstructorTable.Constructors.map((c, index) => {
                 return (
                     <SearchResult
                         key={index}

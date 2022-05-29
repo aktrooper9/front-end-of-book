@@ -44,6 +44,22 @@ function App() {
 
                     results.push(data);
                     setOutput(results);
+                    return (
+                            <div className={classes.App}>
+                                <header className={classes.AppHeader}>
+                                    <div>
+                                        <Header/>
+                                    </div>
+                                </header>
+                                <main>
+                                    <SearchInput submitHandler={searchHandler}/>
+                                    <SearchOutput term={input} results={output}/>
+                                </main>
+                                <footer>
+                                    <Footer/>
+                                </footer>
+                            </div>
+                        );
             }, (error) => {
                 console.log("F");
                 console.log(error);
