@@ -6,8 +6,8 @@ import classes from './SearchOutput.module.css';
 const SearchOutput = (props) => {
     let message = null;
 
-    console.log("A");
-    console.log(props);
+//    console.log("A");
+//    console.log(props);
     try {
         if (props.term && props.results[0].ConstructorTable.Constructors.length > 0) {
                 message = <p>In {props.term} there were {props.results[0].ConstructorTable.Constructors.length} teams</p>;
@@ -20,8 +20,8 @@ const SearchOutput = (props) => {
     catch (e) {}
 
     let searchResults = null;
-    console.log("B");
-    console.log(props);
+//    console.log("B");
+//    console.log(props);
     if (props.results.length > 0) {
         searchResults =
             props.results[0].ConstructorTable.Constructors.map((c, index) => {

@@ -11,12 +11,12 @@ function App() {
     const [output, setOutput] = useState([]);
 
     const searchHandler = query => {
-        console.log("[App]:  Doing an AJAX call for year='" + query + "'.");
+//        console.log("[App]:  Doing an AJAX call for year='" + query + "'.");
         setInput(query);
         setOutput([]);
 
-        console.log("C");
-        console.log(properties.endpoint + query);
+//        console.log("C");
+//        console.log(properties.endpoint + query);
 
         fetch(properties.endpoint + query, {
             headers: {
@@ -39,8 +39,8 @@ function App() {
 //                    data.forEach(datum => {
 //                        results.push(datum)
 //                    });
-                    console.log("E");
-                    console.log(data);
+//                    console.log("E");
+//                    console.log(data);
 
                     results.push(data);
                     setOutput(results);
@@ -61,12 +61,12 @@ function App() {
                             </div>
                         );
             }, (error) => {
-                console.log("F");
-                console.log(error);
+//                console.log("F");
+//                console.log(error);
             });
 
-            console.log("D");
-            console.log(output);
+//            console.log("D");
+//            console.log(output);
     }
 
     return (
