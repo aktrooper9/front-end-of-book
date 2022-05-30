@@ -23,35 +23,35 @@ const SearchOutput = (props) => {
                         key={index}
 
                         location={result.location}
-                        name={location.name}
-                        region={location.region}
-                        country={location.country}
-                        lat={location.lat}
-                        lon={location.lon}
-                        tz_id={location.tz_id}
-                        localtime_epoch={location.localtime_epoch}
-                        localtime={location.localtime}
+                        name={result.location.name}
+                        region={result.location.region}
+                        country={result.location.country}
+                        lat={result.location.lat}
+                        lon={result.location.lon}
+                        tz_id={result.location.tz_id}
+                        localtime_epoch={result.location.localtime_epoch}
+                        localtime={result.location.localtime}
 
                         current={result.current}
-                        temp_c={current.temp_c}
-                        temp_f={current.temp_f}
-                        condition={current.condition}
-                        text={condition.text}
-                        wind_mph={current.wind_mph}
-                        wind_kph={current.wind_kph}
-                        wind_degree={current.wind_degree}
-                        wind_dir={current.wind_dir}
-                        pressure_mb={current.pressure_mb}
-                        pressure_in={current.pressure_in}
-                        precip_mm={current.precip_mm}
-                        precip_in={current.precip_in}
-                        humidity={current.humidity};
-                        cloud={current.cloud}
-                        vis_km={current.vis_km}
-                        vis_miles={current.vis_miles}
-                        uv={current.uv}
-                        gust_mph={current.gust_mph}
-                        gust_kph={current.gust_kph}
+                        temp_c={result.current.temp_c}
+                        temp_f={result.current.temp_f}
+                        condition={result.current.condition}
+                        text={result.current.condition.text}
+                        wind_mph={result.current.wind_mph}
+                        wind_kph={result.current.wind_kph}
+                        wind_degree={result.current.wind_degree}
+                        wind_dir={result.current.wind_dir}
+                        pressure_mb={result.current.pressure_mb}
+                        pressure_in={result.current.pressure_in}
+                        precip_mm={result.current.precip_mm}
+                        precip_in={result.current.precip_in}
+                        humidity={result.current.humidity}e
+                        cloud={result.current.cloud}
+                        vis_km={result.current.vis_km}
+                        vis_miles={result.current.vis_miles}
+                        uv={result.current.uv}
+                        gust_mph={result.current.gust_mph}
+                        gust_kph={result.current.gust_kph}
 
                     />
                 );

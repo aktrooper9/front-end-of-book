@@ -2,7 +2,7 @@ export const properties = {
     courseName: 'Level 7 Yak Search',
     endpoint: 'http://localhost:5000/searchCityWeather?q=',
     description: 'Displays information about the weather conditions at a provided city. Weather information provided by weatherapi.com.',
-    backendSwaggerUrl: 'http://localhost:5000/',
+    backendSwaggerUrl: 'http://localhost:3000/',
     createdBy: 'Riley Zhu',
     repositoryUrl: 'https://github.com/LEAGUE-Level7/Yak-Weather'
 };

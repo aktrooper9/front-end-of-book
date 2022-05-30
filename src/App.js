@@ -32,9 +32,7 @@ function App() {
             })
             .then(data => {
                     const results = [];
-                    data.forEach(datum => {
-                        results.push(datum)
-                    });
+                    results.push(data);
                     setOutput(results);
             }, (error) => {
                 console.log(error);
