@@ -29,7 +29,7 @@ const SearchResult = (props) => {
             <br/>
             <h3>Gust Speed: {props.gust_kph} KPH, {props.gust_mph} MPH</h3>
             <br/>
-            <h3>Pressure: {props.pressure_mm} millibars, {props.pressure_in} inches</h3>
+            <h3>Pressure: {props.pressure_mb} millibars, {props.pressure_in} inches</h3>
             <br/>
             <h3>UV: {props.uv} on UV Index</h3>
             <br/>
