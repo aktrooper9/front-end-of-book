@@ -21,7 +21,7 @@ const SearchOutput = (props) => {
                 return (
                     <SearchResult
                         key={index}
-                        prev={result.prev}
+                      //  self={result.self}
                         next={result.next}
                         prev={result.prev}
                     />
