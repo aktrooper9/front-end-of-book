@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 Book Search',
+    endpoint: 'http://localhost:5000/swagger-ui/index.html',
+    description: 'I made an API that gets books. Its not cookie clicker, but it is still nice,
+    backendSwaggerUrl: 'http://localhost:5000/swagger-ui/index.html',
+    createdBy: 'Andrew Kim',
+    repositoryUrl: 'https://github.com/aktrooper9/BookAPI3'
 };
 
 /*
