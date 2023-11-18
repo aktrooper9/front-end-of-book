@@ -1,7 +1,7 @@
 export const properties = {
     courseName: 'Level 7 Book Search',
     endpoint: 'http://localhost:5000/swagger-ui/index.html',
-    description: 'I made an API that gets books. Its not cookie clicker, but it is still nice,
+    description: 'I made an API that gets books. Its not cookie clicker, but it is still nice,',
     backendSwaggerUrl: 'http://localhost:5000/swagger-ui/index.html',
     createdBy: 'Andrew Kim',
     repositoryUrl: 'https://github.com/aktrooper9/BookAPI3'

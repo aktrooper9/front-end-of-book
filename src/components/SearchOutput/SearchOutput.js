@@ -21,7 +21,7 @@ const SearchOutput = (props) => {
                 return (
                     <SearchResult
                         key={index}
-                        Result[]={result.Result}
+                        result={result.Result}
                     />
                 );
             })
